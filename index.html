@@ -99,7 +99,105 @@ a[id*="quote"] {
   padding: 0.5rem 1.5rem !important;
   border-radius: 0.5rem !important;
 }
+/* ============================================
+   BUTTON STYLING FIX
+   ============================================ */
 
+/* Primary Buttons (Get Instant Quote, Contact) */
+.btn-primary, 
+a[href="#quote"]:not(.nav-link),
+button[type="submit"],
+.bg-jet-red {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    color: white !important;
+    padding: 14px 28px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    gap: 8px !important;
+}
+
+.btn-primary:hover,
+a[href="#quote"]:not(.nav-link):hover,
+button[type="submit"]:hover,
+.bg-jet-red:hover {
+    background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4) !important;
+}
+
+/* Secondary Buttons (Call Now) */
+.btn-secondary,
+a[href^="tel:"] {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    color: white !important;
+    padding: 14px 28px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    gap: 8px !important;
+}
+
+.btn-secondary:hover,
+a[href^="tel:"]:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Navigation Buttons - Better Contrast */
+.nav-link,
+nav a:not(.bg-jet-red) {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+}
+
+.nav-link:hover,
+nav a:not(.bg-jet-red):hover {
+    color: #1e40af !important;
+    background: rgba(30, 64, 175, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Contact Button in Navigation */
+nav .bg-jet-red {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 3px 10px rgba(220, 38, 38, 0.3) !important;
+    text-decoration: none !important;
+}
+
+nav .bg-jet-red:hover {
+    background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.4) !important;
+}
+  
 .quote-btn:hover,
 nav a.quote-btn:hover,
 nav > div a.quote-btn:hover,
